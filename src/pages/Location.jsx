@@ -29,8 +29,7 @@ function Location() {
         <Grid.Col span={9}>
 
         <AspectRatio ratio={16 / 9}>
-        <iframe  frameBorder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.384788443655!2d-79.89583072350487!3d44.69628143907565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2adb1027cc52d3%3A0xd3bc4d85ac4181f2!2sPrestige%20Motors!5e0!3m2!1sen!2sca!4v1690145697619!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </AspectRatio>
+        <iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2398453217925!2d-79.88582452244731!3d44.69430197107176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2adb1027cc52d3%3A0xd3bc4d85ac4181f2!2sPrestige%20Motors!5e0!3m2!1sen!2sca!4v1690174493505!5m2!1sen!2sca" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </AspectRatio>
          
         </Grid.Col>
         <Grid.Col span={2}></Grid.Col>

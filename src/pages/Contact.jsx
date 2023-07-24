@@ -63,7 +63,7 @@ function Contact() {
           
 
       <Center pt={100}>
-      <img length="200" width="500" src="https://shreepng.com/img/Inside/Car/Bugatti/veyron%20super%20sport%20300%20bugatti.png"></img>
+      <img length="200" width="500" src="/img/chironpng.png"></img>
       </Center>
          </div>
 <Footer/>

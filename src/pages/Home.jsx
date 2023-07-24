@@ -17,7 +17,7 @@ function Home() {
     <div>
       <div
         style={{
-          backgroundImage: "url(" + require("../img/supercars-dark.jpg") + ")",
+          backgroundImage: "url(" + "/img/supercars-dark.jpg" + ")",
           backgroundPosition: "center",
           minHeight: "100vh",
           backgroundSize: "cover"

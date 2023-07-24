@@ -39,18 +39,7 @@ function Inventory() {
   const [opened, { open, close }] = useDisclosure(false);
   const [selected, setSelected] = useState({});
   const [alert, setAlert] = useState(false);
-
-  const form = useForm({
-    initialValues: {
-      date: "",
-      time: ""
-    },
-
-    validate: {
-      date: (value) => (value != '' ? "Please select a date." : null),
-      time: (value) => (value != '' ? "Please select a time." : null)
-    },
-  });
+  const [date, setDate] = useState();
 
 
   const formatter = new Intl.NumberFormat('en-US', {
@@ -107,6 +96,9 @@ const closeModal = () => {
       (model) => ({ value: model, label: model })
     );
   };
+
+  console.log(date);
+  
 
   return (
     <>
@@ -170,13 +162,13 @@ const closeModal = () => {
               Book a Test Drive
             </Text>
           </Center>
-            <form onSubmit={form.onSubmit((values) => console.log(values))}>
+
            <Center>
             <DateInput
             label="Date"
              placeholder="Date"
              w={350}
-             {...form.getInputProps('date')}
+             onChange={(value) => setDate(value)}
             />
             </Center>
             <Center>
@@ -184,12 +176,12 @@ const closeModal = () => {
             label="Time"
              placeholder="Time"
              w={350}
-             {...form.getInputProps('time')}
+           
             />
             </Center> 
-            </form>
+
             <Center maw={400} h={100} mx="auto">
-          <Button onClick={() => setAlert(!alert)} size='md'  radius="md" color="dark">
+          <Button onClick={() => setAlert(!alert)} size='md'  radius="md" color="dark" disabled = {typeof date === `undefined` || date.toString() === ''}>
             Book
         </Button>
         </Center>
