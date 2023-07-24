@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.mantine-Drawer-content {
+  background-color: black;
+}
+
+.mantine-Burger-root {
+  position: absolute;
+  z-index: 201;
+}
+
+.mantine-List-item {
+  color: white;
+  list-style-type: none;
+}
+.banner {
+  z-index: 1;
+  position: absolute;
+}
+
+.footerFit {
+  min-height:calc(100vh - 187px) !important;
+}
